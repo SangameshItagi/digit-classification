@@ -105,8 +105,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Hit the api
    ```js
-   curl --location --request POST 'http://127.0.0.1:5000/classify' \
---form 'image=@"Path to file"'
+   curl --location --request POST 'http://127.0.0.1:5000/classify' --form 'image=@"Path to file"'
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
