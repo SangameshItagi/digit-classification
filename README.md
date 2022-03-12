@@ -11,14 +11,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-[![Wireframe][wireframe-shield]][wireframe-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -81,15 +73,13 @@ A handwritten digit classification using tensorflow model with keras and flask a
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
+* [Python](https://www.python.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,10 +91,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* Make sure to install tensorflow, Keras and Flask packages before running.
 
 ### Installation
 
@@ -116,9 +103,10 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    flask run
    ```
-3. Start the server
+3. Hit the api
    ```js
-   npm start
+   curl --location --request POST 'http://127.0.0.1:5000/classify' \
+--form 'image=@"Path to file"'
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
